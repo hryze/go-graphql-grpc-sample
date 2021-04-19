@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS test_db;
+CREATE DATABASE test_db;
+USE test_db;
+
+CREATE TABLE  articles
+(
+   id INT NOT NULL AUTO_INCREMENT,
+   author VARCHAR(20) NOT NULL,
+   title VARCHAR(20) NOT NULL,
+   content VARCHAR(200) NOT NULL,
+   PRIMARY KEY(id)
+)
